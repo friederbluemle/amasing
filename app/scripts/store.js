@@ -1,0 +1,1 @@
+Amasing.ApplicationAdapter = DS.FixtureAdapter;
