@@ -1,34 +1,376 @@
-<div>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Your App</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-        </div>
-    </nav>
-    <div class="container" id="main">
-        <div class="row">
-            <div>
-                <div class="col-md-3">
-                    <div class="well sidebar-nav">
-                        <strong>Colors</strong>
-                        <ul class="list-group">
-                        {{#each item in controller}}
-                            <li class="list-group-item">{{item}}</li>
-                        {{/each}}
+<div class="header-outer">
+    <div class="header">
+        <h1><a href="#"><img src="images/logo.png" alt="" /></a></h1>
+        <div class="nav">
+            <a href="#" class="menu active"></a>
+            <div class="dropMenu">
+                <h2>Browse Categories</h2>
+                <ul>
+                    <li><a href="#">Automotive</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    {{outlet}}
-                </div>
+                    </li>
+                    <li><a href="#">Baby &amp; Children</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Beauty &amp; Health</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home &amp; Garden</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kids &amp; Toys</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Clothing &amp; Apparel</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Books</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Computers</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Electronics</a>
+                        <ul>
+                            <li><a href="#">Sub Category Name One</a></li>
+                            <li><a href="#">Sub Category Name Two</a></li>
+                            <li><a href="#">Sub Category Name Three</a></li>
+                            <li><a href="#">Sub Category Name Four</a></li>
+                            <li><a href="#">Sub Category Name Five</a></li>
+                            <li><a href="#">Sub Category Name Six</a></li>
+                            <li><a href="#">Sub Category Name Seven</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </div><!--Navigation-->
+        <span class="sep"></span>
+        <div class="search">
+            <span>
+                <select name="cate1" id="cate1" tabindex="1">
+                    <option>Automotive</option>
+                    <option>Baby &amp; Children</option>
+                    <option>Beauty &amp; Health</option>
+                    <option>Home &amp; Garden</option>
+                    <option>Kids &amp; Toys</option>
+                    <option>Clothing &amp; Apparel</option>
+                    <option>Books</option>
+                    <option>Computers</option>
+                    <option>Electronics</option>
+                </select>
+            </span>
+            <input type="text" value="Search entire site..." onclick="if (this.defaultValue==this.value) this.value=''" onblur="if (this.value=='') this.value=this.defaultValue" />
+            <input type="submit" value="&nbsp;" />
+        </div><!--Search Products-->
+        <div class="cart">
+            <span id="output">0</span>
+        </div><!--Cart-->
+        <div class="clr"></div>
     </div>
 </div>
+
+{{outlet}}
+
+<div class="footer-outer">
+    <div class="footer">
+        <div class="footer-left">
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p>Copyright &copy; 2014 Amasing.co | All Right Reserved</p>
+        </div>
+        <div class="social">
+            <a href="#"><img src="images/facebook.jpg" alt="" /></a>
+            <a href="#"><img src="images/twitter.jpg" alt="" /></a>
+            <a href="#"><img src="images/google-plus.jpg" alt="" /></a>
+            <a href="#"><img src="images/linkedin.jpg" alt="" /></a>
+            <a href="#"><img src="images/mail.jpg" alt="" /></a>
+            <a href="#"><img src="images/rss.jpg" alt="" /></a>
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>
+
+<div class="cart-pop">
+    <h6><span>My Cart</span></h6>
+    <div class="product-scroll">
+        <ul>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+            <li class="li">
+                <div class="col1">
+                    <div class="imgBx">
+                        <img src="images/sm-img.png" alt="" />
+                    </div>
+                    <span class="del">DELETE</span>
+                </div>
+                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <div class="col2">
+                    <b>$10.80</b>
+                    <span>12 Ibs</span>
+                    <small>QTY</small>
+                    <select>
+                        <option>12</option>
+                    </select>
+                </div>
+                <div class="clr"></div>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            $('.del').on('click', function(){
+                $(this).closest('li').fadeOut('slow');
+            });
+        </script>
+    </div><!--Scroller-->
+    <div class="cartInfo">
+        <div class="gryBx">
+            <div class="info">
+                <b>Total Cart Value:</b>
+                <strong>$270.00</strong>
+                <div class="clr"></div>
+            </div>
+            <div class="info">
+                <b><img src="images/red-dot.png" alt="" /> Cart Weight:</b>
+                <strong class="grn">20 lbs</strong>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="amazonBx">
+            <ul>
+                <li>Cart too heavy</li>
+                <li>Min spend not met</li>
+                <li>Cart > 400 SGD</li>
+            </ul>
+            <img src="images/amazon-btn.png" alt="" class="right" />
+            <div class="clr"></div>
+        </div>
+        <div class="value-slider" id="line-slider1">
+            <input class="js-step1" type="text">  
+            <div id="js-display-decimal1" class="display-box"></div>
+        </div>
+        <div class="value-slider" id="line-slider2">
+            <input class="js-step2" type="text">
+            <div id="js-display-decimal2" class="display-box"></div> 
+        </div>
+        <div class="attention">
+            <div class="att">
+                <h5>Attention !</h5>
+                <ul>
+                    <li>Cart weight becomes over 20 lbs by adding products</li>
+                    <li>Cart total volume becomes over SGD 320</li>
+                </ul>
+            </div>
+        </div><!--/Attention-->
+    </div>
+    <div class="clr"></div>
+</div>
+<!--Footer-->
+<div class="white-bg"></div>
+<div class="cartbg"></div>
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#cate1").selectbox();
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#cate2").selectbox();
+    });
+</script>
+
+<script src="js/plugins.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/powerange.js"></script>
+<script src="js/jquery.elevatezoom.js"></script>
