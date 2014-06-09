@@ -1,15 +1,9 @@
 <div class="wrapper">
     <div class="brdcrb">
         <select name="cate2" id="cate2" tabindex="2">
-            <option>Automotive</option>
-            <option>Baby &amp; Children</option>
-            <option>Beauty &amp; Health</option>
-            <option>Home &amp; Garden</option>
-            <option>Kids &amp; Toys</option>
-            <option>Clothing &amp; Apparel</option>
-            <option>Books</option>
-            <option>Computers</option>
-            <option>Electronics</option>
+        {{#each categories}}
+            <option>{{name}}</option>
+        {{/each}}
         </select>
         <div class="results">
             <small>1 - 15 of 1,234,567 results</small>
@@ -21,255 +15,23 @@
     </div><!--/Bread Crumb-->
     <div class="home-product">
         <ul>
+        {{#each products}}
             <li>
                 <div class="productBx">
-                    <img src="images/product-01.jpg" alt="" />
+                    <img src="images/product-0{{unbound id}}.jpg" alt="" />
                 </div>
                 <div class="info">
-                    <p>Cleaning/ Clean Home Synergy Blend</p>
-                    <b>$10.80</b>
+                    <p>{{title}}</p>
+                    <b>{{price}}</b>
                 </div>
                 <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
+                    <h3>{{title}}</h3>
+                    <p>{{description}}</p>
+                    {{#link-to 'product' this class="view"}}View Details{{/link-to}}
                     <a href="#" class="add">Add to Cart</a>
                 </div>
             </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-02.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Fiskars Garden Bucket Caddy</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-03.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Little Tikes Deluxe Home and Garden Playhouse</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-04.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Foreside Home and Garden Metal Shasta</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-        <!--</ul>
-        <div class="clr"></div>
-        <ul>-->
-            <li>
-                <div class="productBx">
-                    <img src="images/product-05.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Miracle-Gro Aero Garden 7-Pod Indoor...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-06.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Allsop Home and Garden Solar  Bubble...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-07.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Chapin 20000 1-Gallon Lawn and Garden...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-08.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Sloggers Women's Rain and Garden Shoes...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-        <!--</ul>
-        <div class="clr"></div>
-        <ul>-->
-            <li>
-                <div class="productBx">
-                    <img src="images/product-01.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Cleaning/ Clean Home Synergy Blend</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-02.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Fiskars Garden Bucket Caddy</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-03.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Little Tikes Deluxe Home and Garden Playhouse</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-04.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Foreside Home and Garden Metal Shasta</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-        <!--</ul>
-        <div class="clr"></div>
-        <ul>-->
-            <li>
-                <div class="productBx">
-                    <img src="images/product-05.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Miracle-Gro Aero Garden 7-Pod Indoor...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-06.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Allsop Home and Garden Solar  Bubble...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-07.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Chapin 20000 1-Gallon Lawn and Garden...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
-            <li>
-                <div class="productBx">
-                    <img src="images/product-08.jpg" alt="" />
-                </div>
-                <div class="info">
-                    <p>Sloggers Women's Rain and Garden Shoes...</p>
-                    <b>$10.80</b>
-                </div>
-                <div class="infoBx">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <p>Garden bucket caddy featuring unique and clever design. Fits snugly on 5-gallon bucket. Sturdy canvas construction with deep pockets for various hand tools Includes cell phone, beverage, and seed packet holders 8.9-by-10-by- 13.4-inches at 2-pounds</p>
-                    <a href="#" class="view">View Details</a>
-                    <a href="#" class="add">Add to Cart</a>
-                </div>
-            </li>
+        {{/each}}
         </ul>
         <script language="javascript">
             $('.add').click(function() {
