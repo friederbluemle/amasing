@@ -10,31 +10,121 @@ var data = {
     "status":"ok",
     "categories": [
         {
-            "name":"Automotive"
+            "id": 1,
+            "name": "Automotive",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Baby & Children"
+            "id": 2,
+            "name": "Baby & Children",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Beauty & Health"
+            "id": 3,
+            "name": "Beauty & Health",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Home & Garden"
+            "id": 4,
+            "name": "Home & Garden",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Kids & Toys"
+            "id": 5,
+            "name": "Kids & Toys",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Clothing & Apparel"
+            "id": 6,
+            "name": "Clothing & Apparel",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Books"
+            "id": 7,
+            "name": "Books",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Computers"
+            "id": 8,
+            "name": "Computers",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         },
         {
-            "name":"Electronics"
+            "id": 9,
+            "name": "Electronics",
+            "subcategories": [
+                "Sub Category Name One",
+                "Sub Category Name Two",
+                "Sub Category Name Three",
+                "Sub Category Name Four",
+                "Sub Category Name Five",
+                "Sub Category Name Six",
+                "Sub Category Name Seven"
+            ]
         }
     ]
 }
