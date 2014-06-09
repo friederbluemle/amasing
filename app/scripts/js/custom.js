@@ -51,7 +51,7 @@ $(function() {
 
 /*Rate*/
 $(function() {
-  $.fn.raty.defaults.path = 'js/lib/img';
+  $.fn.raty.defaults.path = 'scripts/js/lib/img';
   $('#default-demo').raty();
 });
 
