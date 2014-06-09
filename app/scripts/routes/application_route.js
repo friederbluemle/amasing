@@ -2,12 +2,38 @@ Amasing.ApplicationRoute = Ember.Route.extend({
     // admittedly, this should be in IndexRoute and not in the
     // top level ApplicationRoute; we're in transition... :-)
     model: function () {
-        return data.categories;
+        return data;
     }
 });
 
 var data = {
     "status":"ok",
+    "cart_items": [
+        {
+            "id": 1,
+            "name": "Cleaning/Clean Home Synergy Blend",
+            "image": "sm-img.png",
+            "weight": "12 Ibs",
+            "quantity": "12",
+            "price": "$10.80"
+        },
+        {
+            "id": 2,
+            "name": "Fiskars Garden Bucket Caddy",
+            "image": "sm-img.png",
+            "weight": "12 Ibs",
+            "quantity": "12",
+            "price": "$10.80"
+        },
+        {
+            "id": 3,
+            "name": "Little Tikes Deluxe Home and Garden Playhouse",
+            "image": "sm-img.png",
+            "weight": "12 Ibs",
+            "quantity": "12",
+            "price": "$10.80"
+        }
+    ],
     "categories": [
         {
             "id": 1,

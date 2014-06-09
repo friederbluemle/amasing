@@ -6,7 +6,7 @@
             <div class="dropMenu">
                 <h2>Browse Categories</h2>
                 <ul>
-                {{#each this}}
+                {{#each categories}}
                     <li><a href="#">{{name}}</a>
                         <ul>
                         {{#each subcategories}}
@@ -22,7 +22,7 @@
         <div class="search">
             <span>
                 <select name="cate1" id="cate1" tabindex="1">
-                {{#each this}}
+                {{#each categories}}
                     <option>{{name}}</option>
                 {{/each}}
                 </select>
@@ -66,150 +66,26 @@
     <h6><span>My Cart</span></h6>
     <div class="product-scroll">
         <ul>
+        {{#each cart_items}}
             <li class="li">
                 <div class="col1">
                     <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
+                        <img src="images/{{unbound image}}" alt="" />
                     </div>
                     <span class="del">DELETE</span>
                 </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
+                <h5>{{name}}</h5>
                 <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
+                    <b>{{price}}</b>
+                    <span>{{weight}}</span>
                     <small>QTY</small>
                     <select>
-                        <option>12</option>
+                        <option>{{quantity}}</option>
                     </select>
                 </div>
                 <div class="clr"></div>
             </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
-            <li class="li">
-                <div class="col1">
-                    <div class="imgBx">
-                        <img src="images/sm-img.png" alt="" />
-                    </div>
-                    <span class="del">DELETE</span>
-                </div>
-                <h5>Cleaning/Clean Home Synergy Blend</h5>
-                <div class="col2">
-                    <b>$10.80</b>
-                    <span>12 Ibs</span>
-                    <small>QTY</small>
-                    <select>
-                        <option>12</option>
-                    </select>
-                </div>
-                <div class="clr"></div>
-            </li>
+        {{/each}}
         </ul>
         <script type="text/javascript">
             $('.del').on('click', function(){
