@@ -8,6 +8,7 @@ Amasing.ApplicationRoute = Ember.Route.extend({
 
 var data = {
     "status":"ok",
+    "cart_size": 3,
     "cart_items": [
         {
             "id": 1,
