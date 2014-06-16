@@ -1,11 +1,3 @@
-Amasing.ApplicationRoute = Ember.Route.extend({
-    // admittedly, this should be in IndexRoute and not in the
-    // top level ApplicationRoute; we're in transition... :-)
-    model: function () {
-        return data;
-    }
-});
-
 var data = {
     "status":"ok",
     "cart_size": 3,
@@ -154,4 +146,12 @@ var data = {
             ]
         }
     ]
-}
+};
+
+Amasing.ApplicationRoute = Ember.Route.extend({
+    // admittedly, this should be in IndexRoute and not in the
+    // top level ApplicationRoute; we're in transition... :-)
+    model: function () {
+        return data;
+    }
+});

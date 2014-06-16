@@ -1,9 +1,3 @@
-Amasing.IndexRoute = Ember.Route.extend({
-    model: function () {
-        return data;
-    }
-});
-
 var data = {
     "status":"ok",
     "products": [
@@ -94,4 +88,10 @@ var data = {
             "name": "Electronics",
         }
     ]
-}
+};
+
+Amasing.IndexRoute = Ember.Route.extend({
+    model: function () {
+        return data;
+    }
+});
