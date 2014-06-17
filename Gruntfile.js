@@ -375,9 +375,9 @@ module.exports = function (grunt) {
         'neuter:app',
         'concat',
         'cssmin',
-        'uglify',
+        //'uglify',
         'copy',
-        'rev',
+        //'rev',
         'usemin'
     ]);
 
