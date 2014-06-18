@@ -95,3 +95,7 @@ Amasing.IndexRoute = Ember.Route.extend({
         return data;
     }
 });
+
+jQuery.getJSON('http://www.amasing.co/scripts/api.php/?method=getAllCategories', function(categories) {
+    $("#cats").html("result" + categories);
+});
