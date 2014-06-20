@@ -2,7 +2,7 @@ Amasing.ApplicationRoute = Ember.Route.extend({
     // admittedly, this should be in IndexRoute and not in the
     // top level ApplicationRoute; we're in transition... :-)
     model: function () {
-        return Ember.$.getJSON('http://amasing.highdog.me/scripts/api.php?method=getMock&file=application_route.json').then(function(data) {
+        return Ember.$.getJSON('/scripts/api.php?method=getMock&file=application_route.json').then(function(data) {
             return data;
         });
     }
