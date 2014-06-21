@@ -3,45 +3,29 @@
         <a href="#" class="back">Back to Home &amp; Garden</a>
     </div><!--/Bread Crumb-->
     <div class="product-preview">
-        <img id="zoom_03" src="images/big-img.jpg" data-zoom-image="images/shoe-01-big.jpg" class="prv"/>
+        <img id="{{unbound main_image.id}}" src="{{unbound main_image.src}}" data-zoom-image="{{unbound main_image.data_zoom_image}}" class="prv"/>
         <div id="gallery_01">
-         
-          <a href="#" data-image="images/big-img.jpg" data-zoom-image="images/shoe-01-big.jpg">
-            <span><img id="img_01" src="images/shoe-01.jpg" /></span>
-          </a>
-        
-          <a href="#" data-image="images/big-img1.jpg" data-zoom-image="images/shoe-01-big.jpg">
-            <span><img id="img_01" src="images/shoe-02.jpg" /></span>
-          </a>
-        
-          <a href="#" data-image="images/big-img.jpg" data-zoom-image="images/shoe-01-big.jpg">
-            <span><img id="img_01" src="images/shoe-01.jpg" /></span>
-          </a>
-        
-          <a href="#" data-image="images/big-img1.jpg" data-zoom-image="images/shoe-01-big.jpg">
-            <span><img id="img_01" src="images/shoe-02.jpg" /></span>
-          </a>
-          
-          <a href="#" data-image="images/big-img.jpg" data-zoom-image="images/shoe-01-big.jpg">
-            <span><img id="img_01" src="images/shoe-01.jpg" /></span>
-          </a>
-        <span class="zoom">Click to Zoom</span>
+{{#each gallery_items}}
+            <a href="#" data-image="{{unbound data_image}}" data-zoom-image="{{unbound data_zoom_image}}">
+                <span><img id="{{unbound id}}" src="{{unbound src}}" /></span>
+            </a>
+{{/each}}
+            <span class="zoom">Click to Zoom</span>
         </div>
         <div class="clr"></div>
-        
     </div><!--Product Preview-->
     <div class="product-content">
-        <h2>Sloggers Women's Rain and Garden Shoes - Made in the USA</h2>
+        <h2>{{title}}</h2>
         <div class="meta">
-            <span class="author">By <a href="#">Sloggers</a></span>
+            <span class="author">By <a href="#">{{author}}</a></span>
             <div class="rate">
                 <div class="star">
                     <div id="default-demo"></div>
-                    <small>1.234 reviews</small>
+                    <small>{{reviews.total}} reviews</small>
                 </div>
             </div>
             <div class="share">
-                <!-- AddThis Button BEGIN -->
+<!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style">
 <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 <a class="addthis_button_tweet"></a>
@@ -54,80 +38,26 @@
             <div class="clr"></div>
         </div><!--Meta-->
         <div class="shipping">
-            <b>Price: <big>$28.62</big></b>
-            <small>Status : IN Stock</small>
+            <b>Price: <big>{{price}}</big></b>
+            <small>Status : {{status}}</small>
             <span class="sep"></span>
             <span class="free">FREE Shipping on orders over $35</span>
             <div class="clr"></div>
         </div>
         <ul class="list1">
-            <li>Made in the USA from 100-percent recyclable material</li>
-            <li>Maximum comfort; includes our exclusive "All-Day-Comfort-Insole" thickness: 7mm heel/5mm ball</li>
-            <li>Fit info: 1/2 sizes order up and for a perfect fit use our exclusive 1/2 size insole - search style 330BK</li>
-            <li>100-Percent waterproof with a Deep lug Sole</li>
-            <li>100-Percent Recyclable</li>
+{{#each description_lines}}
+            <li>{{this}}</li>
+{{/each}}
         </ul>
         <div class="sizeBx">
             <ul class="sizeTab">
-                <li><a href="#tab1">Size 6</a></li>
-                <li><a href="#tab2">Size 7</a></li>
-                <li><a href="#tab3">Size 8</a></li>
-                <li><a href="#tab4">Size 9</a></li>
+{{#each variants}}
+                <li><a href="#">{{this}}</a></li>
+{{/each}}
             </ul>
             <div class="clr"></div>
             <div class="sizeInfo">
-                <div class="tabC" id="tab1">
-                    <div class="qty-cart">
-                        <label>Quantity:</label>
-                        <select>
-                            <option>12</option>
-                        </select>
-                        <div class="clr"></div>
-                        <a href="#">Add To My Cart</a>
-                    </div>
-                    <div class="cartShip">
-                        <ul>
-                            <li><span>Your Cart is too heavy for FREE Shipping, max weight less than 20 lbs</span></li>
-                            <li><span>Your Cart is now subject to Import Duty, make it less than SGD 320</span></li>
-                        </ul>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="tabC" id="tab2">
-                    <div class="qty-cart">
-                        <label>Quantity:</label>
-                        <select>
-                            <option>12</option>
-                        </select>
-                        <div class="clr"></div>
-                        <a href="#">Add To My Cart</a>
-                    </div>
-                    <div class="cartShip">
-                        <ul>
-                            <li><span>Your Cart is too heavy for FREE Shipping, max weight less than 20 lbs</span></li>
-                            <li><span>Your Cart is now subject to Import Duty, make it less than SGD 320</span></li>
-                        </ul>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="tabC" id="tab3">
-                    <div class="qty-cart">
-                        <label>Quantity:</label>
-                        <select>
-                            <option>12</option>
-                        </select>
-                        <div class="clr"></div>
-                        <a href="#">Add To My Cart</a>
-                    </div>
-                    <div class="cartShip">
-                        <ul>
-                            <li><span>Your Cart is too heavy for FREE Shipping, max weight less than 20 lbs</span></li>
-                            <li><span>Your Cart is now subject to Import Duty, make it less than SGD 320</span></li>
-                        </ul>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="tabC" id="tab4">
+                <div class="tabC">
                     <div class="qty-cart">
                         <label>Quantity:</label>
                         <select>
@@ -151,51 +81,17 @@
     <div class="similar-product">
         <h6>Customers Who Bought This Item Also Bought</h6>
         <ul class="bxslider">
+        {{#each similar_products}}
             <li>
                 <div class="prod">
-                    <a href="#"><img src="images/other-01.png" alt="" /></a>
+                    <a href="#"><img src="{{unbound image}}" alt="" /></a>
                 </div>
                 <div class="gry">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <b>$6.98</b>
+                    <h3>{{title}}</h3>
+                    <b>{{price}}</b>
                 </div>
             </li>
-            <li>
-                <div class="prod">
-                    <a href="#"><img src="images/other-02.png" alt="" /></a>
-                </div>
-                <div class="gry">
-                    <h3>Fiskars Garden Bucket Caddy</h3>
-                    <b>$6.98</b>
-                </div>
-            </li>
-            <li>
-                <div class="prod">
-                    <a href="#"><img src="images/other-03.png" alt="" /></a>
-                </div>
-                <div class="gry">
-                    <h3>Fiskars 3 Piece Softouch Garden...</h3>
-                    <b>$6.98</b>
-                </div>
-            </li>
-            <li>
-                <div class="prod">
-                    <a href="#"><img src="images/other-04.png" alt="" /></a>
-                </div>
-                <div class="gry">
-                    <h3>Sloggers - Women's  Wide Brim...</h3>
-                    <b>$17.77</b>
-                </div>
-            </li>
-            <li>
-                <div class="prod">
-                    <a href="#"><img src="images/other-05.png" alt="" /></a>
-                </div>
-                <div class="gry">
-                    <h3>Womanswork 285 Paisley Floppy...</h3>
-                    <b>$19.99</b>
-                </div>
-            </li>
+        {{/each}}
         </ul>
         <div class="clr"></div>
     </div><!--Similar Product-->
